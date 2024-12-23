@@ -6,29 +6,29 @@ const error = document.getElementById("error")
 
 function ajouter() {
     if (ville.value.trim() !== "") {
-        const newVille = document.createElement("p");
-        newVille.innerHTML = ville.value;
-        newVille.classList.add("ville-item");
+        const newcity = document.createElement("p");
+        newcity.innerHTML = ville.value;
+        newcity.classList.add("ville-item");
 
         
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Supprimer";
         deleteButton.classList.add("btn", "btn-danger", "btn-sm", "ms-2");
         deleteButton.onclick = function() {
-            supprimer(newVille);  
+            supprimer(newcity);  
         };
 
-        newVille.appendChild(deleteButton); 
-        results.appendChild(newVille);
+        newcity.appendChild(deleteButton); 
+        results.appendChild(newcity);
         ville.value = "";
 
-        newVille.onclick = function () {
-            makeGreen(newVille);
+        newcity.onclick = function () {
+            makeGreen(newcity);
         }
 
         // Styling
-        newVille.style.borderRadius = "20px";
-        newVille.style.cursor = "pointer";
+        newcity.style.borderRadius = "20px";
+        newcity.style.cursor = "pointer";
 
     }else{
         error.innerHTML = '<i class="bi bi-exclamation-circle"></i> SVP entrer le nome de ville!'
