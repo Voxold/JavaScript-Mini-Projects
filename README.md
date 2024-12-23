@@ -64,7 +64,7 @@ This repository contains a diverse collection of small, practical projects that 
     ```
 
 3. **Open in Browser**:<br>
-    Use Live Server or open index.html directly in your browser.
+    Use Live Server or open <code>index.html</code> directly in your browser.
 
 ## 🤝 Contributions
 
