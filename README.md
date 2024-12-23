@@ -59,9 +59,9 @@ This repository contains a diverse collection of small, practical projects that 
    ```
 2. **Navigate to a Project Folder**:
 
-```bash
-cd JavaScript-Mini-Projects
-```
+    ```bash
+    cd JavaScript-Mini-Projects
+    ```
 
 3. **Open in Browser**:
 Use Live Server or open index.html directly in your browser.
