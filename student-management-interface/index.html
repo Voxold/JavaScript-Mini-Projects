@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form and Table</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/JavaScript-Mini-Projects/student-management-interface/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div class="mb-3">
+                    <label for="code" class="form-label">Code</label>
+                    <input type="number" class="form-control" name="code" placeholder="Enter code" id="code">
+                </div>
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="nom" placeholder="Enter name" id="nom">
+                </div>
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prenom</label>
+                    <input type="text" class="form-control" name="prenom" placeholder="Enter first name" id="prenom">
+                </div>
+                <div class="mb-3">
+                    <label for="semestre" class="form-label">Semestre</label>
+                    <input type="text" class="form-control" name="semestre" placeholder="Enter semester" id="semestre">
+                </div>
+                <div class="mb-3">
+                    <label for="filiere" class="form-label">Filiere</label>
+                    <input type="text" class="form-control" name="filiere" placeholder="Enter filiere" id="filiere">
+                </div>
+                <button class="btn btn-primary" onclick="ajouter()">Ajouter</button>
+                <button class="btn btn-danger" onclick="supprimer()">Supprimer</button>
+            </form>
+        </div>
+
+        <div id="result">
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/JavaScript-Mini-Projects/student-management-interface/main.js"></script>
+</body>
+</html>
