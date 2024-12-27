@@ -1,14 +1,34 @@
+const commentNum = document.getElementById("commentNum");
 
-const comment = document.getElementById("comment");
-const post = document.getElementById("post");
-const results = document.getElementById("results");
-const error = document.getElementById("error");
+let counter = 0;
 
-function postComment () {
-    if (comment.ariaValueMax.trim() !==  "") {
-        console.log("d")
+function postComment() {
+    const commentInput = document.getElementById("comment");
+    const commentText = commentInput.value.trim();
+    const resultsContainer = document.getElementById("results");
+    const errorElement = document.getElementById("error");
 
+    errorElement.textContent = "";
+
+    if (commentText !== "") {
+
+    const newComment = document.createElement("p");
+    newComment.className = "p-2 m-2 border rounded";
+    newComment.innerHTML = `
+                            <div class="comment-text mb-2 bg-light p-2 rounded">${commentText}</div>
+                            <div class="w-50 d-flex justify-content-start align-items-center gap-2">
+                                <i class="bi bi-hand-thumbs-up-fill text-primary" style="font-size: 1.2rem; margin-right:.5rem"></i>
+                                <i class="bi bi-chat-fill text-secondary" style="font-size: 1.2rem;"></i>
+                            </div>`;
+
+    commentInput.value = "";
+    
+    counter += 1;
+    commentNum.textContent = counter;
+    return resultsContainer.appendChild(newComment);
+    
     }else{
-        error.innerHTML = '<i class="bi bi-exclamation-circle"></i> Please enter your comment!'
+        errorElement.innerHTML = "<i class='bi bi-exclamation-circle-fill'></i> Please enter a comment before posting.";
+        return;
     }
 }

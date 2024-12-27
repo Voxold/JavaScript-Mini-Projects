@@ -1,0 +1,45 @@
+.comment-text {
+    font-size: 1rem;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.w-50 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem; 
+}
+
+.bi-hand-thumbs-up-fill {
+    color: #0d6efd;
+    transition: color 0.3s ease;
+}
+
+.bi-chat-fill {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.bi-hand-thumbs-up-fill:hover,
+.bi-chat-fill:hover {
+    color: #0056b3; 
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#commentNum {
+    font-size: 14px;
+    color: grey;
+}
+
+button i {
+    margin-right: 1rem;
+    color: grey;
+    opacity: .5;
+    font-size: 18px;
+}
+
+#results {
+    display: none;
+}

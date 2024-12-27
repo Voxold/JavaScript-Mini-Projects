@@ -1,5 +1,7 @@
 # Facebook-Style Post and Comment Simulator
 
+![alt text](img/image.png)
+
 This project is a simple JavaScript application that replicates the behavior of Facebook posts and comments. Users can add posts dynamically and then attach comments to each post, creating an interactive and nested content structure.
 
 ## Features
