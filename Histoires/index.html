@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoires</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center text-primary mb-4">Histoires</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrez un nom">
+            </div>
+            <div class="mb-3">
+                <label for="adj" class="form-label">Adjectif</label>
+                <input type="text" class="form-control" id="adj" placeholder="Entrez un adjectif">
+            </div>
+            <div class="mb-3">
+                <label for="pers" class="form-label">Nom d'une personne</label>
+                <input type="text" class="form-control" id="pers" placeholder="Entrez le nom d'une personne">
+            </div>
+            <button type="button" id="raconter" class="btn btn-primary w-100" onclick="addData()">Raconte une histoire</button>
+        </form>
+        <div id="histoire" class="mt-4 p-3 border rounded bg-light shadow">
+            <h2 class="text-center mb-3">Histoire Table</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Adjectif</th>
+                        <th>Nom d'une personne</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="result">
+                    <!-- Dynamic rows -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
