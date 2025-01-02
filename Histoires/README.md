@@ -22,13 +22,13 @@ A dynamic web application that allows users to add, edit, and delete data rows i
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/histoires-table.git
+   git clone https://github.com/Voxold/JavaScript-Mini-Projects.git
     ```
 
 2. Open the project folder:
 
     ```bash
-    cd histoires-table
+    cd Histoires
     ```
 
 3. Open index.html in your web browser to view the application.
