@@ -1,0 +1,13 @@
+.error {
+    color: #dc3545; /* Bootstrap danger color for error messages */
+    font-size: 0.875rem;
+}
+.success input {
+    border-color: #28a745; /* Bootstrap success green */
+}
+.error input {
+    border-color: #dc3545; /* Bootstrap error red */
+}
+.form-control {
+    margin-bottom: 1rem;
+}
